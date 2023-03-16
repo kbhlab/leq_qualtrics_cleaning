@@ -1,0 +1,833 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,participation_date,baby_id,study_id,study_name,date_of_birth,child_gender,cgvr1,cgvr1_3_TEXT,cgvr1_eng_use,cgvr1_eng_var,cgvr1_eng_tochild,cgvr1_eng_age,cgvr1_eng_accent,cgvr1_fre_use,cgvr1_fre_var,cgvr1_fre_tochild,cgvr1_fre_age,cgvr1_fre_accent,cgvr1_lang3_yn,cgvr1_lang3_name,cgvr1_lang3_use,cgvr1_lang3_variety,cgvr1_lang3_tochild,cgvr1_lang3_age,cgvr1_lang3_accent,cgvr1_lang4_yn,cgvr1_lang4_name,cgvr1_lang4_use,cgvr1_lang4_variety,cgvr1_lang4_tochild,cgvr1_lang4_age,cgvr1_lang4_accent,second_cgiver_yn,cgvr2,cgvr2_3_TEXT,cgvr2_eng_use,cgvr2_eng_variety,cgvr2_eng_tochild,cgvr2_eng_age,cgvr2_eng_accent,cgvr2_fre_use,cgvr2_fre_variety,cgvr2_fre_tochild,cgvr2_fre_age,cgvr2_fre_accent,cgvr2_lang3_yn,cgvr2_lang3_name,cgvr2_lang3_use,cgvr2_lang3_variety,cgvr2_lang3_tochild,cgvr2_lang3_age,cgvr2_lang3_accent,cgvr2_lang4_yn,cgvr2_lang4_name,cgvr2_lang4_use,cgvr2_lang4_variety,cgvr2_lang4_tochild,cgvr2_lang4_age,cgvr2_lang4_accent,other_cgvrs_1,other_cgvrs_2,daycare,daycare_start,daycare_langs,daycare_langs_3_TEXT,daycare_langs_4_TEXT,long_trips,long_trips_details,child_langs_1,child_langs_2,child_langs_3,child_langs_4,confirm_age_4,wake_time,sleep_time,hours_nap,sit1_type,sit1_type_9_TEXT,sit1_type_specify,sit1_hrs_1_1,sit1_hrs_1_2,sit1_hrs_1_3,sit1_hrs_1_4,sit1_hrs_1_5,sit1_hrs_1_6,sit1_hrs_1_7,sit1_hrs_2_1,sit1_hrs_2_2,sit1_hrs_2_3,sit1_hrs_2_4,sit1_hrs_2_5,sit1_hrs_2_6,sit1_hrs_2_7,sit1_hrs_3_1,sit1_hrs_3_2,sit1_hrs_3_3,sit1_hrs_3_4,sit1_hrs_3_5,sit1_hrs_3_6,sit1_hrs_3_7,sit1_hrs_4_1,sit1_hrs_4_2,sit1_hrs_4_3,sit1_hrs_4_4,sit1_hrs_4_5,sit1_hrs_4_6,sit1_hrs_4_7,sit1_ages_1,sit1_ages_2,sit2_type,sit2_type_9_TEXT,sit2_type_specify,sit2_hrs_1_1,sit2_hrs_1_2,sit2_hrs_1_3,sit2_hrs_1_4,sit2_hrs_1_5,sit2_hrs_1_6,sit2_hrs_1_7,sit2_hrs_2_1,sit2_hrs_2_2,sit2_hrs_2_3,sit2_hrs_2_4,sit2_hrs_2_5,sit2_hrs_2_6,sit2_hrs_2_7,sit2_hrs_3_1,sit2_hrs_3_2,sit2_hrs_3_3,sit2_hrs_3_4,sit2_hrs_3_5,sit2_hrs_3_6,sit2_hrs_3_7,sit2_hrs_4_1,sit2_hrs_4_2,sit2_hrs_4_3,sit2_hrs_4_4,sit2_hrs_4_5,sit2_hrs_4_6,sit2_hrs_4_7,sit2_ages_1,sit3_type,sit3_type_9_TEXT,sit3_type_specify,sit3_hrs_1_1,sit3_hrs_1_2,sit3_hrs_1_3,sit3_hrs_1_4,sit3_hrs_1_5,sit3_hrs_1_6,sit3_hrs_1_7,sit3_hrs_2_1,sit3_hrs_2_2,sit3_hrs_2_3,sit3_hrs_2_4,sit3_hrs_2_5,sit3_hrs_2_6,sit3_hrs_2_7,sit3_hrs_3_1,sit3_hrs_3_2,sit3_hrs_3_3,sit3_hrs_3_4,sit3_hrs_3_5,sit3_hrs_3_6,sit3_hrs_3_7,sit3_hrs_4_1,sit3_hrs_4_2,sit3_hrs_4_3,sit3_hrs_4_4,sit3_hrs_4_5,sit3_hrs_4_6,sit3_hrs_4_7,sit3_ages_1,sit4_type,sit4_type_9_TEXT,sit4_type_specify,sit4_hrs_1_1,sit4_hrs_1_2,sit4_hrs_1_3,sit4_hrs_1_4,sit4_hrs_1_5,sit4_hrs_1_6,sit4_hrs_1_7,sit4_hrs_2_1,sit4_hrs_2_2,sit4_hrs_2_3,sit4_hrs_2_4,sit4_hrs_2_5,sit4_hrs_2_6,sit4_hrs_2_7,sit4_hrs_3_1,sit4_hrs_3_2,sit4_hrs_3_3,sit4_hrs_3_4,sit4_hrs_3_5,sit4_hrs_3_6,sit4_hrs_3_7,sit4_hrs_4_1,sit4_hrs_4_2,sit4_hrs_4_3,sit4_hrs_4_4,sit4_hrs_4_5,sit4_hrs_4_6,sit4_hrs_4_7,sit4_ages_1,sit5_type,sit5_type_9_TEXT,sit5_type_specify,sit5_hrs_1_1,sit5_hrs_1_2,sit5_hrs_1_3,sit5_hrs_1_4,sit5_hrs_1_5,sit5_hrs_1_6,sit5_hrs_1_7,sit5_hrs_2_1,sit5_hrs_2_2,sit5_hrs_2_3,sit5_hrs_2_4,sit5_hrs_2_5,sit5_hrs_2_6,sit5_hrs_2_7,sit5_hrs_3_1,sit5_hrs_3_2,sit5_hrs_3_3,sit5_hrs_3_4,sit5_hrs_3_5,sit5_hrs_3_6,sit5_hrs_3_7,sit5_hrs_4_1,sit5_hrs_4_2,sit5_hrs_4_3,sit5_hrs_4_4,sit5_hrs_4_5,sit5_hrs_4_6,sit5_hrs_4_7,sit5_ages_1,sit6_type,sit6_type_9_TEXT,sit6_type_specify,sit6_hrs_1_1,sit6_hrs_1_2,sit6_hrs_1_3,sit6_hrs_1_4,sit6_hrs_1_5,sit6_hrs_1_6,sit6_hrs_1_7,sit6_hrs_2_1,sit6_hrs_2_2,sit6_hrs_2_3,sit6_hrs_2_4,sit6_hrs_2_5,sit6_hrs_2_6,sit6_hrs_2_7,sit6_hrs_3_1,sit6_hrs_3_2,sit6_hrs_3_3,sit6_hrs_3_4,sit6_hrs_3_5,sit6_hrs_3_6,sit6_hrs_3_7,sit6_hrs_4_1,sit6_hrs_4_2,sit6_hrs_4_3,sit6_hrs_4_4,sit6_hrs_4_5,sit6_hrs_4_6,sit6_hrs_4_7,sit6_ages_1,sit7_type,sit7_type_9_TEXT,sit7_type_specify,sit7_hrs_1_1,sit7_hrs_1_2,sit7_hrs_1_3,sit7_hrs_1_4,sit7_hrs_1_5,sit7_hrs_1_6,sit7_hrs_1_7,sit7_hrs_2_1,sit7_hrs_2_2,sit7_hrs_2_3,sit7_hrs_2_4,sit7_hrs_2_5,sit7_hrs_2_6,sit7_hrs_2_7,sit7_hrs_3_1,sit7_hrs_3_2,sit7_hrs_3_3,sit7_hrs_3_4,sit7_hrs_3_5,sit7_hrs_3_6,sit7_hrs_3_7,sit7_hrs_4_1,sit7_hrs_4_2,sit7_hrs_4_3,sit7_hrs_4_4,sit7_hrs_4_5,sit7_hrs_4_6,sit7_hrs_4_7,sit7_ages_1,sit8_type,sit8_type_9_TEXT,sit8_type_specify,sit8_hrs_1_1,sit8_hrs_1_2,sit8_hrs_1_3,sit8_hrs_1_4,sit8_hrs_1_5,sit8_hrs_1_6,sit8_hrs_1_7,sit8_hrs_2_1,sit8_hrs_2_2,sit8_hrs_2_3,sit8_hrs_2_4,sit8_hrs_2_5,sit8_hrs_2_6,sit8_hrs_2_7,sit8_hrs_3_1,sit8_hrs_3_2,sit8_hrs_3_3,sit8_hrs_3_4,sit8_hrs_3_5,sit8_hrs_3_6,sit8_hrs_3_7,sit8_hrs_4_1,sit8_hrs_4_2,sit8_hrs_4_3,sit8_hrs_4_4,sit8_hrs_4_5,sit8_hrs_4_6,sit8_hrs_4_7,sit8_ages_1,sit9_type,sit9_type_9_TEXT,sit9_type_specify,sit9_hrs_1_1,sit9_hrs_1_2,sit9_hrs_1_3,sit9_hrs_1_4,sit9_hrs_1_5,sit9_hrs_1_6,sit9_hrs_1_7,sit9_hrs_2_1,sit9_hrs_2_2,sit9_hrs_2_3,sit9_hrs_2_4,sit9_hrs_2_5,sit9_hrs_2_6,sit9_hrs_2_7,sit9_hrs_3_1,sit9_hrs_3_2,sit9_hrs_3_3,sit9_hrs_3_4,sit9_hrs_3_5,sit9_hrs_3_6,sit9_hrs_3_7,sit9_hrs_4_1,sit9_hrs_4_2,sit9_hrs_4_3,sit9_hrs_4_4,sit9_hrs_4_5,sit9_hrs_4_6,sit9_hrs_4_7,sit9_ages_1,sit10_type,sit10_type_9_TEXT,sit10_type_specify,sit10_hrs_1_1,sit10_hrs_1_2,sit10_hrs_1_3,sit10_hrs_1_4,sit10_hrs_1_5,sit10_hrs_1_6,sit10_hrs_1_7,sit10_hrs_2_1,sit10_hrs_2_2,sit10_hrs_2_3,sit10_hrs_2_4,sit10_hrs_2_5,sit10_hrs_2_6,sit10_hrs_2_7,sit10_hrs_3_1,sit10_hrs_3_2,sit10_hrs_3_3,sit10_hrs_3_4,sit10_hrs_3_5,sit10_hrs_3_6,sit10_hrs_3_7,sit10_hrs_4_1,sit10_hrs_4_2,sit10_hrs_4_3,sit10_hrs_4_4,sit10_hrs_4_5,sit10_hrs_4_6,sit10_hrs_4_7,sit10_ages_1,sit_count,glob_est_1_1,glob_est_1_2,glob_est_1_3,glob_est_1_4,final_notes,today_date,age_sit_start,baby_gender,baby_gender2,baby_gender3,situation_count,highest_age,sit1_length,sit2_length,sit3_length,sit4_length,sit5_length,sit6_length,sit7_length,sit8_length,sit9_length,sit10_length,mono_exception,mono_exception_text,l1_age_ac,l2_age_ac,l3_age_ac,l4_age_ac,L1_default_lang,L2_default_lang,L3_default_lang,L4_default_lang,baby_age,baby_fullage,cgvr1_lang3,cgvr1_lang4,cgvr2,cgvr2_lang3,cgvr2_lang4,child_langs,num_langs,hrs_awake,sleepwake_diff,l1_curr_exp,l2_curr_exp,l3_curr_exp,l4_curr_exp,l1_sit1_exp,l2_sit1_exp,l3_sit1_exp,l4_sit1_exp,l1_sit2_exp,l2_sit2_exp,l3_sit2_exp,l4_sit2_exp,l1_sit3_exp,l2_sit3_exp,l3_sit3_exp,l4_sit3_exp,l1_sit4_exp,l2_sit4_exp,l3_sit4_exp,l4_sit4_exp,l1_sit5_exp,l2_sit5_exp,l3_sit5_exp,l4_sit5_exp,l1_sit6_exp,l2_sit6_exp,l3_sit6_exp,l4_sit6_exp,l1_sit7_exp,l2_sit7_exp,l3_sit7_exp,l4_sit7_exp,l1_sit8_exp,l2_sit8_exp,l3_sit8_exp,l4_sit8_exp,l1_sit9_exp,l2_sit9_exp,l3_sit9_exp,l4_sit9_exp,l1_sit10_exp,l2_sit10_exp,l3_sit10_exp,l4_sit10_exp,l1_global_exp,l2_global_exp,l3_global_exp,l4_global_exp,l1_total_hrs,l2_total_hrs,l3_total_hrs,l4_total_hrs,l1_cumu_exp,l2_cumu_exp,l3_cumu_exp,l4_cumu_exp,l1_overall_exp,l2_overall_exp,l3_overall_exp,l4_overall_exp
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,Date of Participation:,Baby ID:,Study ID:,"Study Name:
+Please enter the abbreviated study name (e.g., BNW, Trivocab)","Child's date of birth:
+Use YYYY/MM/DD format",Child's gender:,"What is Caregiver 1's relationship to [Field-child_name]?
+(Caregiver 1 is the person responding to this questionnaire) - Selected Choice","What is Caregiver 1's relationship to [Field-child_name]?
+(Caregiver 1 is the person responding to this questionnaire) - Other (please specify) - Text",Do you use English in everyday life...,What variety of English do you use?,Do you speak English to [Field-child_name]...,"At what age did you start learning English?
+(Enter 0 for since birth)",When people hear you speak English can they guess that you speak another language...,Do you use French in everyday life...,What variety of French do you use?,Do you speak French to [Field-child_name]...,"At what age did you start learning French?
+(Enter 0 for since birth)",When people hear you speak French can they guess that you speak another language...,Do you use another language in everyday life?,Which language?,Do you use [Field-cgvr1_lang3] in everyday life...,What variety of [Field-cgvr1_lang3] do you use?,Do you speak [Field-cgvr1_lang3] to [Field-child_name]...,"At what age did you start learning [Field-cgvr1_lang3]?
+(Enter 0 for since birth)",When people hear you speak [Field-cgvr1_lang3] can they guess that you speak another language...,Do you use another language in everyday life?,Which language?,Do you use [Field-cgvr1_lang4] in everyday life...,What variety of [Field-cgvr1_lang4] do you use?,Do you speak [Field-cgvr1_lang4] to [Field-child_name]...,"At what age did you start learning [Field-cgvr1_lang4]?
+(Enter 0 for since birth)",When people hear you speak [Field-cgvr1_lang4] can they guess that you speak another language...,"Does [Field-child_name] have another primary caregiver?
+If the other primary caregiver is not present, ask the primary caregiver who is present to answer questions about the other caregiver as accurately as possible.",What is Caregiver 2's relationship to [Field-child_name]? - Selected Choice,What is Caregiver 2's relationship to [Field-child_name]? - Other (please specify) - Text,Does [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] use English in everyday life...,What variety of English does [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] use?,Does [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] speak English to [Field-child_name]...,"At what age did [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry]  start learning English?
+(Enter 0 for since birth)",When people hear [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] speak English can they guess that they speak another language...,Does [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] use French in everyday life...,What variety of French does [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] use?,Does [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] speak French to [Field-child_name]...,"At what age did [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] start learning French?
+(Enter 0 for since birth)",When people hear [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] speak French can they guess that they speak another language...,Does [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] use another language in everyday life?,Which language?,Does [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] use [Field-cgvr2_lang3] in everyday life...,What variety of [Field-cgvr2_lang3] does [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] use?,Does [Field-child_name1]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] speak [Field-cgvr2_lang3] to [Field-child_name]...,"At what age did [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] start learning [Field-cgvr2_lang3]?
+(Enter 0 for since birth)",When people hear [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] speak [Field-cgvr2_lang3] can they guess that they speak another language...,Does [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] use another language in everyday life?,Which language?,Does [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] use [Field-cgvr2_lang4] in everyday life...,What variety of [Field-cgvr2_lang4]  does [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] use?,Does [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] speak [Field-cgvr2_lang4]  to [Field-child_name]...,"At what age did [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] start learning [Field-cgvr2_lang4]?
+(Enter 0 for since birth)",When people hear [Field-child_name]'s [QID8-ChoiceGroup-SelectedChoicesTextEntry] speak [Field-cgvr2_lang4]  can they guess that they speak another language...,"Does [Field-child_name] spend an hour per week or more on a regular basis with anyone else?
+Leave blank if no other caregivers - Caregiver 3's relationship to child:","Does [Field-child_name] spend an hour per week or more on a regular basis with anyone else?
+Leave blank if no other caregivers - Caregiver 4's relationship to child:","Does [Field-child_name] attend regular childcare, such as daycare?","Since what age?
+Use number of months (0 for since birth; 6 for 6 months; 24 for 2 years, etc.)",What languages are spoken at daycare? - Selected Choice,What languages are spoken at daycare? - Other 1 (please specify) - Text,What languages are spoken at daycare? - Other 2 (please specify) - Text,Has [Field-child_name] ever been on a trip of 1 month or more where [Field-baby_gender3] language exposure would have changed?,Details about the trip:,"The following are the languages the child is exposed to. Confirm with parent before continuing.
+
+(If either parent speaks English or French to the child, or the child hears them at daycare, those two languages will be in the L1 and L2 spots below by default.) - Language 1","The following are the languages the child is exposed to. Confirm with parent before continuing.
+
+(If either parent speaks English or French to the child, or the child hears them at daycare, those two languages will be in the L1 and L2 spots below by default.) - Language 2","The following are the languages the child is exposed to. Confirm with parent before continuing.
+
+(If either parent speaks English or French to the child, or the child hears them at daycare, those two languages will be in the L1 and L2 spots below by default.) - Language 3","The following are the languages the child is exposed to. Confirm with parent before continuing.
+
+(If either parent speaks English or French to the child, or the child hears them at daycare, those two languages will be in the L1 and L2 spots below by default.) - Language 4","The following is the child's age as calculated based on date of birth and date of LEQ administration. Confirm the age with the parent before continuing.
+
+(Age is rounded to the nearest month; 15 days rounds down and 16 days rounds up. Full age is [Field-baby_fullage]) - Child age:",What time does [Field-child_name] usually wake up?,What time does [Field-child_name] usually go to sleep?,How many hours does [Field-child_name] nap per day?,Situation 1 - Selected Choice,Situation 1 - Other (write explanation) - Text,Describe situation 1:,"[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+copy Mon to all weekdays     copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sun",Situation end age (enter child's age in months; start age is 0 for birth) - Age when situation started:,Situation end age (enter child's age in months; start age is 0 for birth) - Age when situation ended:,Situation 2Delete - Selected Choice,Situation 2Delete - Other (write explanation) - Text,Describe situation 2:,"[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sun",Situation end age (enter child's age in months) - Age when situation ended:,Situation 3Delete - Selected Choice,Situation 3Delete - Other (write explanation) - Text,Describe situation 3:,"[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sun",Situation end age (enter child's age in months) - Age when situation ended:,Situation 4Delete - Selected Choice,Situation 4Delete - Other (write explanation) - Text,Describe situation 4:,"[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sun",Situation end age (enter child's age in months) - Age when situation ended:,Situation 5Delete - Selected Choice,Situation 5Delete - Other (write explanation) - Text,Describe situation 5:,"[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sun",Situation end age (enter child's age in months) - Age when situation ended:,Situation 6Delete - Selected Choice,Situation 6Delete - Other (write explanation) - Text,Describe situation 6:,"[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sun",Situation end age (enter child's age in months) - Age when situation ended:,Situation 7Delete - Selected Choice,Situation 7Delete - Other (write explanation) - Text,Describe situation 7:,"[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sun",Situation end age (enter child's age in months) - Age when situation ended:,Situation 8Delete - Selected Choice,Situation 8Delete - Other (write explanation) - Text,Describe situation 8:,"[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sun",Situation end age (enter child's age in months) - Age when situation ended:,Situation 9Delete - Selected Choice,Situation 9Delete - Other (write explanation) - Text,Describe situation 9:,"[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sun",Situation end age (enter child's age in months) - Age when situation ended:,Situation 10 (final possible situation)Delete - Selected Choice,Situation 10 (final possible situation)Delete - Other (write explanation) - Text,Describe situation 10:,"[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-1] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-2] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-3] - Sun","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Mon","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Tues","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Wed","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Thurs","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Fri","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sat","[Field-child_name] is awake for an estimated [Field-hrs_awake] hours per day
+
+
+copy Mon to all weekdays  copy Sat to Sun - [QID79-ChoiceTextEntryValue-4] - Sun",Situation end age (enter child's age in months) - Age when situation ended:,Situation count,"Global estimate: If you could put a tape recorder up to [Field-child_name]'s ear and counted all the words [Field-baby_gender] has heard spoken directly to [Field-baby_gender2] (i.e. not radio/TV) in [Field-baby_gender3] whole life, what percentage do you think would be in [Field-child_langs]? - Percentage: - [QID79-ChoiceTextEntryValue-1]","Global estimate: If you could put a tape recorder up to [Field-child_name]'s ear and counted all the words [Field-baby_gender] has heard spoken directly to [Field-baby_gender2] (i.e. not radio/TV) in [Field-baby_gender3] whole life, what percentage do you think would be in [Field-child_langs]? - Percentage: - [QID79-ChoiceTextEntryValue-2]","Global estimate: If you could put a tape recorder up to [Field-child_name]'s ear and counted all the words [Field-baby_gender] has heard spoken directly to [Field-baby_gender2] (i.e. not radio/TV) in [Field-baby_gender3] whole life, what percentage do you think would be in [Field-child_langs]? - Percentage: - [QID79-ChoiceTextEntryValue-3]","Global estimate: If you could put a tape recorder up to [Field-child_name]'s ear and counted all the words [Field-baby_gender] has heard spoken directly to [Field-baby_gender2] (i.e. not radio/TV) in [Field-baby_gender3] whole life, what percentage do you think would be in [Field-child_langs]? - Percentage: - [QID79-ChoiceTextEntryValue-4]",For the researcher: please enter any notes related to this LEQ that might be useful to document,today_date,age_sit_start,baby_gender,baby_gender2,baby_gender3,situation_count,highest_age,sit1_length,sit2_length,sit3_length,sit4_length,sit5_length,sit6_length,sit7_length,sit8_length,sit9_length,sit10_length,mono_exception,mono_exception_text,l1_age_ac,l2_age_ac,l3_age_ac,l4_age_ac,L1_default_lang,L2_default_lang,L3_default_lang,L4_default_lang,baby_age,baby_fullage,cgvr1_lang3,cgvr1_lang4,cgvr2,cgvr2_lang3,cgvr2_lang4,child_langs,num_langs,hrs_awake,sleepwake_diff,l1_curr_exp,l2_curr_exp,l3_curr_exp,l4_curr_exp,l1_sit1_exp,l2_sit1_exp,l3_sit1_exp,l4_sit1_exp,l1_sit2_exp,l2_sit2_exp,l3_sit2_exp,l4_sit2_exp,l1_sit3_exp,l2_sit3_exp,l3_sit3_exp,l4_sit3_exp,l1_sit4_exp,l2_sit4_exp,l3_sit4_exp,l4_sit4_exp,l1_sit5_exp,l2_sit5_exp,l3_sit5_exp,l4_sit5_exp,l1_sit6_exp,l2_sit6_exp,l3_sit6_exp,l4_sit6_exp,l1_sit7_exp,l2_sit7_exp,l3_sit7_exp,l4_sit7_exp,l1_sit8_exp,l2_sit8_exp,l3_sit8_exp,l4_sit8_exp,l1_sit9_exp,l2_sit9_exp,l3_sit9_exp,l4_sit9_exp,l1_sit10_exp,l2_sit10_exp,l3_sit10_exp,l4_sit10_exp,l1_global_exp,l2_global_exp,l3_global_exp,l4_global_exp,l1_total_hrs,l2_total_hrs,l3_total_hrs,l4_total_hrs,l1_cumu_exp,l2_cumu_exp,l3_cumu_exp,l4_cumu_exp,l1_overall_exp,l2_overall_exp,l3_overall_exp,l4_overall_exp
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID16_TEXT""}","{""ImportId"":""QID1_TEXT""}","{""ImportId"":""QID2_TEXT""}","{""ImportId"":""QID3_TEXT""}","{""ImportId"":""QID11_TEXT""}","{""ImportId"":""QID170""}","{""ImportId"":""QID5""}","{""ImportId"":""QID5_3_TEXT""}","{""ImportId"":""QID27""}","{""ImportId"":""QID28_TEXT""}","{""ImportId"":""QID29""}","{""ImportId"":""QID241_TEXT""}","{""ImportId"":""QID30""}","{""ImportId"":""QID32""}","{""ImportId"":""QID33_TEXT""}","{""ImportId"":""QID34""}","{""ImportId"":""QID242_TEXT""}","{""ImportId"":""QID35""}","{""ImportId"":""QID36""}","{""ImportId"":""QID260_TEXT""}","{""ImportId"":""QID37""}","{""ImportId"":""QID38_TEXT""}","{""ImportId"":""QID39""}","{""ImportId"":""QID243_TEXT""}","{""ImportId"":""QID40""}","{""ImportId"":""QID42""}","{""ImportId"":""QID43_TEXT""}","{""ImportId"":""QID44""}","{""ImportId"":""QID45_TEXT""}","{""ImportId"":""QID46""}","{""ImportId"":""QID244_TEXT""}","{""ImportId"":""QID47""}","{""ImportId"":""QID18""}","{""ImportId"":""QID8""}","{""ImportId"":""QID8_3_TEXT""}","{""ImportId"":""QID53""}","{""ImportId"":""QID54_TEXT""}","{""ImportId"":""QID55""}","{""ImportId"":""QID245_TEXT""}","{""ImportId"":""QID56""}","{""ImportId"":""QID57""}","{""ImportId"":""QID58_TEXT""}","{""ImportId"":""QID59""}","{""ImportId"":""QID246_TEXT""}","{""ImportId"":""QID60""}","{""ImportId"":""QID61""}","{""ImportId"":""QID62_TEXT""}","{""ImportId"":""QID63""}","{""ImportId"":""QID64_TEXT""}","{""ImportId"":""QID65""}","{""ImportId"":""QID247_TEXT""}","{""ImportId"":""QID66""}","{""ImportId"":""QID67""}","{""ImportId"":""QID68_TEXT""}","{""ImportId"":""QID69""}","{""ImportId"":""QID70_TEXT""}","{""ImportId"":""QID71""}","{""ImportId"":""QID248_TEXT""}","{""ImportId"":""QID72""}","{""ImportId"":""QID73_1""}","{""ImportId"":""QID73_2""}","{""ImportId"":""QID74""}","{""ImportId"":""QID75_TEXT""}","{""ImportId"":""QID76""}","{""ImportId"":""QID76_3_TEXT""}","{""ImportId"":""QID76_4_TEXT""}","{""ImportId"":""QID77""}","{""ImportId"":""QID78_TEXT""}","{""ImportId"":""QID79_1""}","{""ImportId"":""QID79_2""}","{""ImportId"":""QID79_3""}","{""ImportId"":""QID79_4""}","{""ImportId"":""QID264_4""}","{""ImportId"":""QID82_TEXT""}","{""ImportId"":""QID83_TEXT""}","{""ImportId"":""QID84_TEXT""}","{""ImportId"":""QID144""}","{""ImportId"":""QID144_9_TEXT""}","{""ImportId"":""QID168_TEXT""}","{""ImportId"":""QID89_1_1""}","{""ImportId"":""QID89_1_2""}","{""ImportId"":""QID89_1_3""}","{""ImportId"":""QID89_1_4""}","{""ImportId"":""QID89_1_5""}","{""ImportId"":""QID89_1_6""}","{""ImportId"":""QID89_1_7""}","{""ImportId"":""QID89_2_1""}","{""ImportId"":""QID89_2_2""}","{""ImportId"":""QID89_2_3""}","{""ImportId"":""QID89_2_4""}","{""ImportId"":""QID89_2_5""}","{""ImportId"":""QID89_2_6""}","{""ImportId"":""QID89_2_7""}","{""ImportId"":""QID89_3_1""}","{""ImportId"":""QID89_3_2""}","{""ImportId"":""QID89_3_3""}","{""ImportId"":""QID89_3_4""}","{""ImportId"":""QID89_3_5""}","{""ImportId"":""QID89_3_6""}","{""ImportId"":""QID89_3_7""}","{""ImportId"":""QID89_4_1""}","{""ImportId"":""QID89_4_2""}","{""ImportId"":""QID89_4_3""}","{""ImportId"":""QID89_4_4""}","{""ImportId"":""QID89_4_5""}","{""ImportId"":""QID89_4_6""}","{""ImportId"":""QID89_4_7""}","{""ImportId"":""QID114_1""}","{""ImportId"":""QID114_2""}","{""ImportId"":""QID141""}","{""ImportId"":""QID141_9_TEXT""}","{""ImportId"":""QID167_TEXT""}","{""ImportId"":""QID93_1_1""}","{""ImportId"":""QID93_1_2""}","{""ImportId"":""QID93_1_3""}","{""ImportId"":""QID93_1_4""}","{""ImportId"":""QID93_1_5""}","{""ImportId"":""QID93_1_6""}","{""ImportId"":""QID93_1_7""}","{""ImportId"":""QID93_2_1""}","{""ImportId"":""QID93_2_2""}","{""ImportId"":""QID93_2_3""}","{""ImportId"":""QID93_2_4""}","{""ImportId"":""QID93_2_5""}","{""ImportId"":""QID93_2_6""}","{""ImportId"":""QID93_2_7""}","{""ImportId"":""QID93_3_1""}","{""ImportId"":""QID93_3_2""}","{""ImportId"":""QID93_3_3""}","{""ImportId"":""QID93_3_4""}","{""ImportId"":""QID93_3_5""}","{""ImportId"":""QID93_3_6""}","{""ImportId"":""QID93_3_7""}","{""ImportId"":""QID93_4_1""}","{""ImportId"":""QID93_4_2""}","{""ImportId"":""QID93_4_3""}","{""ImportId"":""QID93_4_4""}","{""ImportId"":""QID93_4_5""}","{""ImportId"":""QID93_4_6""}","{""ImportId"":""QID93_4_7""}","{""ImportId"":""QID115_1""}","{""ImportId"":""QID171""}","{""ImportId"":""QID171_9_TEXT""}","{""ImportId"":""QID172_TEXT""}","{""ImportId"":""QID173_1_1""}","{""ImportId"":""QID173_1_2""}","{""ImportId"":""QID173_1_3""}","{""ImportId"":""QID173_1_4""}","{""ImportId"":""QID173_1_5""}","{""ImportId"":""QID173_1_6""}","{""ImportId"":""QID173_1_7""}","{""ImportId"":""QID173_2_1""}","{""ImportId"":""QID173_2_2""}","{""ImportId"":""QID173_2_3""}","{""ImportId"":""QID173_2_4""}","{""ImportId"":""QID173_2_5""}","{""ImportId"":""QID173_2_6""}","{""ImportId"":""QID173_2_7""}","{""ImportId"":""QID173_3_1""}","{""ImportId"":""QID173_3_2""}","{""ImportId"":""QID173_3_3""}","{""ImportId"":""QID173_3_4""}","{""ImportId"":""QID173_3_5""}","{""ImportId"":""QID173_3_6""}","{""ImportId"":""QID173_3_7""}","{""ImportId"":""QID173_4_1""}","{""ImportId"":""QID173_4_2""}","{""ImportId"":""QID173_4_3""}","{""ImportId"":""QID173_4_4""}","{""ImportId"":""QID173_4_5""}","{""ImportId"":""QID173_4_6""}","{""ImportId"":""QID173_4_7""}","{""ImportId"":""QID174_1""}","{""ImportId"":""QID175""}","{""ImportId"":""QID175_9_TEXT""}","{""ImportId"":""QID178_TEXT""}","{""ImportId"":""QID177_1_1""}","{""ImportId"":""QID177_1_2""}","{""ImportId"":""QID177_1_3""}","{""ImportId"":""QID177_1_4""}","{""ImportId"":""QID177_1_5""}","{""ImportId"":""QID177_1_6""}","{""ImportId"":""QID177_1_7""}","{""ImportId"":""QID177_2_1""}","{""ImportId"":""QID177_2_2""}","{""ImportId"":""QID177_2_3""}","{""ImportId"":""QID177_2_4""}","{""ImportId"":""QID177_2_5""}","{""ImportId"":""QID177_2_6""}","{""ImportId"":""QID177_2_7""}","{""ImportId"":""QID177_3_1""}","{""ImportId"":""QID177_3_2""}","{""ImportId"":""QID177_3_3""}","{""ImportId"":""QID177_3_4""}","{""ImportId"":""QID177_3_5""}","{""ImportId"":""QID177_3_6""}","{""ImportId"":""QID177_3_7""}","{""ImportId"":""QID177_4_1""}","{""ImportId"":""QID177_4_2""}","{""ImportId"":""QID177_4_3""}","{""ImportId"":""QID177_4_4""}","{""ImportId"":""QID177_4_5""}","{""ImportId"":""QID177_4_6""}","{""ImportId"":""QID177_4_7""}","{""ImportId"":""QID176_1""}","{""ImportId"":""QID198""}","{""ImportId"":""QID198_9_TEXT""}","{""ImportId"":""QID192_TEXT""}","{""ImportId"":""QID186_1_1""}","{""ImportId"":""QID186_1_2""}","{""ImportId"":""QID186_1_3""}","{""ImportId"":""QID186_1_4""}","{""ImportId"":""QID186_1_5""}","{""ImportId"":""QID186_1_6""}","{""ImportId"":""QID186_1_7""}","{""ImportId"":""QID186_2_1""}","{""ImportId"":""QID186_2_2""}","{""ImportId"":""QID186_2_3""}","{""ImportId"":""QID186_2_4""}","{""ImportId"":""QID186_2_5""}","{""ImportId"":""QID186_2_6""}","{""ImportId"":""QID186_2_7""}","{""ImportId"":""QID186_3_1""}","{""ImportId"":""QID186_3_2""}","{""ImportId"":""QID186_3_3""}","{""ImportId"":""QID186_3_4""}","{""ImportId"":""QID186_3_5""}","{""ImportId"":""QID186_3_6""}","{""ImportId"":""QID186_3_7""}","{""ImportId"":""QID186_4_1""}","{""ImportId"":""QID186_4_2""}","{""ImportId"":""QID186_4_3""}","{""ImportId"":""QID186_4_4""}","{""ImportId"":""QID186_4_5""}","{""ImportId"":""QID186_4_6""}","{""ImportId"":""QID186_4_7""}","{""ImportId"":""QID179_1""}","{""ImportId"":""QID199""}","{""ImportId"":""QID199_9_TEXT""}","{""ImportId"":""QID193_TEXT""}","{""ImportId"":""QID187_1_1""}","{""ImportId"":""QID187_1_2""}","{""ImportId"":""QID187_1_3""}","{""ImportId"":""QID187_1_4""}","{""ImportId"":""QID187_1_5""}","{""ImportId"":""QID187_1_6""}","{""ImportId"":""QID187_1_7""}","{""ImportId"":""QID187_2_1""}","{""ImportId"":""QID187_2_2""}","{""ImportId"":""QID187_2_3""}","{""ImportId"":""QID187_2_4""}","{""ImportId"":""QID187_2_5""}","{""ImportId"":""QID187_2_6""}","{""ImportId"":""QID187_2_7""}","{""ImportId"":""QID187_3_1""}","{""ImportId"":""QID187_3_2""}","{""ImportId"":""QID187_3_3""}","{""ImportId"":""QID187_3_4""}","{""ImportId"":""QID187_3_5""}","{""ImportId"":""QID187_3_6""}","{""ImportId"":""QID187_3_7""}","{""ImportId"":""QID187_4_1""}","{""ImportId"":""QID187_4_2""}","{""ImportId"":""QID187_4_3""}","{""ImportId"":""QID187_4_4""}","{""ImportId"":""QID187_4_5""}","{""ImportId"":""QID187_4_6""}","{""ImportId"":""QID187_4_7""}","{""ImportId"":""QID181_1""}","{""ImportId"":""QID200""}","{""ImportId"":""QID200_9_TEXT""}","{""ImportId"":""QID194_TEXT""}","{""ImportId"":""QID188_1_1""}","{""ImportId"":""QID188_1_2""}","{""ImportId"":""QID188_1_3""}","{""ImportId"":""QID188_1_4""}","{""ImportId"":""QID188_1_5""}","{""ImportId"":""QID188_1_6""}","{""ImportId"":""QID188_1_7""}","{""ImportId"":""QID188_2_1""}","{""ImportId"":""QID188_2_2""}","{""ImportId"":""QID188_2_3""}","{""ImportId"":""QID188_2_4""}","{""ImportId"":""QID188_2_5""}","{""ImportId"":""QID188_2_6""}","{""ImportId"":""QID188_2_7""}","{""ImportId"":""QID188_3_1""}","{""ImportId"":""QID188_3_2""}","{""ImportId"":""QID188_3_3""}","{""ImportId"":""QID188_3_4""}","{""ImportId"":""QID188_3_5""}","{""ImportId"":""QID188_3_6""}","{""ImportId"":""QID188_3_7""}","{""ImportId"":""QID188_4_1""}","{""ImportId"":""QID188_4_2""}","{""ImportId"":""QID188_4_3""}","{""ImportId"":""QID188_4_4""}","{""ImportId"":""QID188_4_5""}","{""ImportId"":""QID188_4_6""}","{""ImportId"":""QID188_4_7""}","{""ImportId"":""QID182_1""}","{""ImportId"":""QID201""}","{""ImportId"":""QID201_9_TEXT""}","{""ImportId"":""QID195_TEXT""}","{""ImportId"":""QID189_1_1""}","{""ImportId"":""QID189_1_2""}","{""ImportId"":""QID189_1_3""}","{""ImportId"":""QID189_1_4""}","{""ImportId"":""QID189_1_5""}","{""ImportId"":""QID189_1_6""}","{""ImportId"":""QID189_1_7""}","{""ImportId"":""QID189_2_1""}","{""ImportId"":""QID189_2_2""}","{""ImportId"":""QID189_2_3""}","{""ImportId"":""QID189_2_4""}","{""ImportId"":""QID189_2_5""}","{""ImportId"":""QID189_2_6""}","{""ImportId"":""QID189_2_7""}","{""ImportId"":""QID189_3_1""}","{""ImportId"":""QID189_3_2""}","{""ImportId"":""QID189_3_3""}","{""ImportId"":""QID189_3_4""}","{""ImportId"":""QID189_3_5""}","{""ImportId"":""QID189_3_6""}","{""ImportId"":""QID189_3_7""}","{""ImportId"":""QID189_4_1""}","{""ImportId"":""QID189_4_2""}","{""ImportId"":""QID189_4_3""}","{""ImportId"":""QID189_4_4""}","{""ImportId"":""QID189_4_5""}","{""ImportId"":""QID189_4_6""}","{""ImportId"":""QID189_4_7""}","{""ImportId"":""QID183_1""}","{""ImportId"":""QID202""}","{""ImportId"":""QID202_9_TEXT""}","{""ImportId"":""QID196_TEXT""}","{""ImportId"":""QID190_1_1""}","{""ImportId"":""QID190_1_2""}","{""ImportId"":""QID190_1_3""}","{""ImportId"":""QID190_1_4""}","{""ImportId"":""QID190_1_5""}","{""ImportId"":""QID190_1_6""}","{""ImportId"":""QID190_1_7""}","{""ImportId"":""QID190_2_1""}","{""ImportId"":""QID190_2_2""}","{""ImportId"":""QID190_2_3""}","{""ImportId"":""QID190_2_4""}","{""ImportId"":""QID190_2_5""}","{""ImportId"":""QID190_2_6""}","{""ImportId"":""QID190_2_7""}","{""ImportId"":""QID190_3_1""}","{""ImportId"":""QID190_3_2""}","{""ImportId"":""QID190_3_3""}","{""ImportId"":""QID190_3_4""}","{""ImportId"":""QID190_3_5""}","{""ImportId"":""QID190_3_6""}","{""ImportId"":""QID190_3_7""}","{""ImportId"":""QID190_4_1""}","{""ImportId"":""QID190_4_2""}","{""ImportId"":""QID190_4_3""}","{""ImportId"":""QID190_4_4""}","{""ImportId"":""QID190_4_5""}","{""ImportId"":""QID190_4_6""}","{""ImportId"":""QID190_4_7""}","{""ImportId"":""QID184_1""}","{""ImportId"":""QID203""}","{""ImportId"":""QID203_9_TEXT""}","{""ImportId"":""QID197_TEXT""}","{""ImportId"":""QID191_1_1""}","{""ImportId"":""QID191_1_2""}","{""ImportId"":""QID191_1_3""}","{""ImportId"":""QID191_1_4""}","{""ImportId"":""QID191_1_5""}","{""ImportId"":""QID191_1_6""}","{""ImportId"":""QID191_1_7""}","{""ImportId"":""QID191_2_1""}","{""ImportId"":""QID191_2_2""}","{""ImportId"":""QID191_2_3""}","{""ImportId"":""QID191_2_4""}","{""ImportId"":""QID191_2_5""}","{""ImportId"":""QID191_2_6""}","{""ImportId"":""QID191_2_7""}","{""ImportId"":""QID191_3_1""}","{""ImportId"":""QID191_3_2""}","{""ImportId"":""QID191_3_3""}","{""ImportId"":""QID191_3_4""}","{""ImportId"":""QID191_3_5""}","{""ImportId"":""QID191_3_6""}","{""ImportId"":""QID191_3_7""}","{""ImportId"":""QID191_4_1""}","{""ImportId"":""QID191_4_2""}","{""ImportId"":""QID191_4_3""}","{""ImportId"":""QID191_4_4""}","{""ImportId"":""QID191_4_5""}","{""ImportId"":""QID191_4_6""}","{""ImportId"":""QID191_4_7""}","{""ImportId"":""QID185_1""}","{""ImportId"":""QID228_TEXT""}","{""ImportId"":""QID231_1_1""}","{""ImportId"":""QID231_1_2""}","{""ImportId"":""QID231_1_3""}","{""ImportId"":""QID231_1_4""}","{""ImportId"":""QID263_TEXT""}","{""ImportId"":""today_date"",""timeZone"":""UTC""}","{""ImportId"":""age_sit_start""}","{""ImportId"":""baby_gender""}","{""ImportId"":""baby_gender2""}","{""ImportId"":""baby_gender3""}","{""ImportId"":""situation_count""}","{""ImportId"":""highest_age""}","{""ImportId"":""sit1_length""}","{""ImportId"":""sit2_length""}","{""ImportId"":""sit3_length""}","{""ImportId"":""sit4_length""}","{""ImportId"":""sit5_length""}","{""ImportId"":""sit6_length""}","{""ImportId"":""sit7_length""}","{""ImportId"":""sit8_length""}","{""ImportId"":""sit9_length""}","{""ImportId"":""sit10_length""}","{""ImportId"":""mono_exception""}","{""ImportId"":""mono_exception_text""}","{""ImportId"":""l1_age_ac""}","{""ImportId"":""l2_age_ac""}","{""ImportId"":""l3_age_ac""}","{""ImportId"":""l4_age_ac""}","{""ImportId"":""L1_default_lang""}","{""ImportId"":""L2_default_lang""}","{""ImportId"":""L3_default_lang""}","{""ImportId"":""L4_default_lang""}","{""ImportId"":""baby_age""}","{""ImportId"":""baby_fullage""}","{""ImportId"":""cgvr1_lang3""}","{""ImportId"":""cgvr1_lang4""}","{""ImportId"":""cgvr2""}","{""ImportId"":""cgvr2_lang3""}","{""ImportId"":""cgvr2_lang4""}","{""ImportId"":""child_langs""}","{""ImportId"":""num_langs""}","{""ImportId"":""hrs_awake""}","{""ImportId"":""sleepwake_diff""}","{""ImportId"":""l1_curr_exp""}","{""ImportId"":""l2_curr_exp""}","{""ImportId"":""l3_curr_exp""}","{""ImportId"":""l4_curr_exp""}","{""ImportId"":""l1_sit1_exp""}","{""ImportId"":""l2_sit1_exp""}","{""ImportId"":""l3_sit1_exp""}","{""ImportId"":""l4_sit1_exp""}","{""ImportId"":""l1_sit2_exp""}","{""ImportId"":""l2_sit2_exp""}","{""ImportId"":""l3_sit2_exp""}","{""ImportId"":""l4_sit2_exp""}","{""ImportId"":""l1_sit3_exp""}","{""ImportId"":""l2_sit3_exp""}","{""ImportId"":""l3_sit3_exp""}","{""ImportId"":""l4_sit3_exp""}","{""ImportId"":""l1_sit4_exp""}","{""ImportId"":""l2_sit4_exp""}","{""ImportId"":""l3_sit4_exp""}","{""ImportId"":""l4_sit4_exp""}","{""ImportId"":""l1_sit5_exp""}","{""ImportId"":""l2_sit5_exp""}","{""ImportId"":""l3_sit5_exp""}","{""ImportId"":""l4_sit5_exp""}","{""ImportId"":""l1_sit6_exp""}","{""ImportId"":""l2_sit6_exp""}","{""ImportId"":""l3_sit6_exp""}","{""ImportId"":""l4_sit6_exp""}","{""ImportId"":""l1_sit7_exp""}","{""ImportId"":""l2_sit7_exp""}","{""ImportId"":""l3_sit7_exp""}","{""ImportId"":""l4_sit7_exp""}","{""ImportId"":""l1_sit8_exp""}","{""ImportId"":""l2_sit8_exp""}","{""ImportId"":""l3_sit8_exp""}","{""ImportId"":""l4_sit8_exp""}","{""ImportId"":""l1_sit9_exp""}","{""ImportId"":""l2_sit9_exp""}","{""ImportId"":""l3_sit9_exp""}","{""ImportId"":""l4_sit9_exp""}","{""ImportId"":""l1_sit10_exp""}","{""ImportId"":""l2_sit10_exp""}","{""ImportId"":""l3_sit10_exp""}","{""ImportId"":""l4_sit10_exp""}","{""ImportId"":""l1_global_exp""}","{""ImportId"":""l2_global_exp""}","{""ImportId"":""l3_global_exp""}","{""ImportId"":""l4_global_exp""}","{""ImportId"":""l1_total_hrs""}","{""ImportId"":""l2_total_hrs""}","{""ImportId"":""l3_total_hrs""}","{""ImportId"":""l4_total_hrs""}","{""ImportId"":""l1_cumu_exp""}","{""ImportId"":""l2_cumu_exp""}","{""ImportId"":""l3_cumu_exp""}","{""ImportId"":""l4_cumu_exp""}","{""ImportId"":""l1_overall_exp""}","{""ImportId"":""l2_overall_exp""}","{""ImportId"":""l3_overall_exp""}","{""ImportId"":""l4_overall_exp""}"
+2023-02-02 13:56:19,2023-02-02 14:00:19,IP Address,174.91.31.237,100,240,True,2023-02-02 14:00:20,R_4T48ZLXHkgkkyR3,,,,,45.3973,-75.6883,anonymous,EN,2023/02/02,99999,S999,Study,2021-09-09,Male,Father,,Sometimes,Jamaican,Regularly,0,Sometimes,Never,,,,,Yes,Esperanto,Sometimes,Standard,Sometimes,10,Regularly,No,,,,,,,Yes,Mother,,Regularly,Canadian,Regularly,0,Never,Sometimes,Quebec,Sometimes,10,Sometimes,No,,,,,,,,,,,,,,Aunt,Grandma,Yes,12,"English,Other 1 (please specify)",Esperanto,,Yes,Went to the moon,English,French,Esperanto,,17,07:00,19:00,2,At home with primary caregiver 1 & 2,,,7,7,7,7,7,7,7,1,1,1,1,1,1,1,2,2,2,2,2,2,2,,,,,,,,0,2,At home with primary caregiver 1,,,8,8,8,8,8,7,7,1,1,1,1,1,1,1,1,1,1,1,1,2,2,,,,,,,,15,At daycare part time,,,5,5,5,5,5,7,7,4,4,4,4,4,1,1,1,1,1,1,1,2,2,,,,,,,,17,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,75,20,5,,Notes notes notes.,,,he,him,his,1,0,2,13,2,0,0,0,0,0,0,0,0,"
+
+The overall exposure is calculated by averaging the cumulative exposure with the global estimate.
+
+",0,0,0,0,English,French,Esperanto,,17,1y 4m 25d,Esperanto,,,,,"English, French, & Esperanto",3,10,,55.71,31.43,12.86,0,49,7,14,0,54,7,9,0,39,22,9,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,75,20,5,0,878,149,163,0,73.78,12.52,13.7,0,74,16,9,0
+2023-02-17 11:29:57,2023-02-17 11:33:58,IP Address,174.91.31.237,100,241,True,2023-02-17 11:33:59,R_Um7MurVgcNT8HEl,,,,,45.3973,-75.6883,anonymous,EN,2023/02/17,99999,S999,Study,2021-09-09,Male,Other (please specify),Stepmother,Sometimes,Jamaican,Sometimes,0,Sometimes,Sometimes,Creole,Sometimes,0,Sometimes,No,,,,,,,,,,,,,,Yes,Other (please specify),Uncle,Sometimes,Jamaican,Regularly,0,Never,Never,,,,,Yes,Japanese,Sometimes,Standard,Never,10,Regularly,No,,,,,,,Grandma,Grandpa,Yes,6,"English,French",,,No,,English,French,Japanese,,17,07:00,19:00,2,At home with primary caregiver 1 & 2,,,6,6,6,6,6,6,6,4,4,4,4,4,4,4,0,0,0,0,0,0,0,,,,,,,,0,6,At daycare part time,,,8,8,8,8,8,6,6,2,2,2,2,2,4,4,0,0,0,0,0,0,0,,,,,,,,10,Started new daycare,,,8,8,8,8,8,6,6,2,2,2,2,2,3.5,3.5,0,0,0,0,0,0.5,0.5,,,,,,,,17,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,70,25,5,,Notes notes notes,,,he,him,his,1,0,6,4,7,0,0,0,0,0,0,0,0,"
+
+The overall exposure is calculated by averaging the cumulative exposure with the global estimate.
+
+",0,0,10,0,English,French,Japanese,,17,1y 5m 9d,,,,Japanese,,"English, French, & Japanese",3,10,,74.29,24.29,1.43,0,42,28,0,0,52,18,0,0,52,17,1,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,70,25,5,0,824,359,7,0,69.24,30.17,0.59,0,70,28,3,0
+2023-02-17 11:39:08,2023-02-17 11:42:22,IP Address,174.91.31.237,100,193,True,2023-02-17 11:42:24,R_3J8jPm2iu2kqSUY,,,,,45.3973,-75.6883,anonymous,FR,2023/02/17,88888,S008,Etude,2021-08-08,Female,Mother,,Sometimes,Quebecois,Sometimes,0,Never,Regularly,Quebecois,Regularly,0,Never,No,,,,,,,,,,,,,,Yes,Other (please specify),Step-père,Sometimes,Canadien,Sometimes,0,Never,Never,,,,,No,,,,,,,,,,,,,,,,No,,,,,Yes,Voyage voyage voyage,anglais,français,,,18,07:00,19:00,2,At home with primary caregiver 1,,,6,6,6,6,6,7,7,4,4,4,4,4,3,3,,,,,,,,,,,,,,,0,18,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,65,35,,,Notes notes notes,,,she,her,her,1,0,18,0,0,0,0,0,0,0,0,0,0,"
+
+L'exposition totale est calculée en obtenant la moyenne de l'exposition cumulative et de l'exposition globale.
+
+",0,0,0,0,anglais,français,,,18,1y 6m 10d,,,,,,anglais & français,2,10,,62.86,37.14,0,0,44,26,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,65,35,0,0,792,468,0,0,62.86,37.14,0,0,64,36,0,0
+2023-02-17 11:56:18,2023-02-17 11:59:35,IP Address,174.91.31.237,100,196,True,2023-02-17 11:59:37,R_3RsbqQ3ZCHGm2j1,,,,,45.3973,-75.6883,anonymous,EN,2023/02/17,777,S777,Studywuddy,2021-07-07,Female,Mother,,Regularly,Ontario,Regularly,0,Never,Never,,,,,No,,,,,,,,,,,,,,Yes,Father,,Sometimes,Second language,Sometimes,10,Regularly,Regularly,Quebecois,Regularly,0,Never,No,,,,,,,,,,,,,,,,Yes,6,"Other 1 (please specify),Other 2 (please specify)",Russian,Mongolian,No,,English,French,,,19,07:00,19:00,3,Other (write explanation),,Lived on Mars,5,5,5,5,5,5,5,4,4,4,4,4,4,4,,,,,,,,,,,,,,,0,10,Other (write explanation),,Lived on Saturn,6,6,6,6,6,5,5,3,3,3,3,3,4,4,,,,,,,,,,,,,,,19,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,65,35,,,asdfadfadfaewfasdfa,,,she,her,her,1,0,10,9,0,0,0,0,0,0,0,0,0,"
+
+The overall exposure is calculated by averaging the cumulative exposure with the global estimate.
+
+",0,0,0,0,English,French,,,19,1y 7m 11d,,,,,,English & French,2,9,,63.49,36.51,0,0,35,28,0,0,40,23,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,65,35,0,0,710,487,0,0,59.31,40.69,0,0,62,38,0,0
