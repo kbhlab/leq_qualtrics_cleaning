@@ -6,9 +6,11 @@ editor: visual
 
 ## Clean LEQ Data & Save Output Files
 
-## VARIABLES - UPDATE THESE TO RUN SCRIPT
+COPY THIS WHOLE FILE (run_this_script.qmd) TO YOUR PROJECT, THEN CHANGE VARIABLES TO RUN SCRIPT
 
-Press the play button on the right-hand-side **after updating the variables** to clean and save the LEQ data in your desired output.
+## VARIABLES - UPDATE THESE
+
+Press the play button on the right-hand-side **after updating the variables and copying the entire code chunk to your project** to clean and save the LEQ data in your desired output. Your input file MUST be the full Qualtrics LEQ download as a CSV for this script to work.
 
 ```{r}
 #---------------------INPUT DATA
@@ -22,8 +24,7 @@ data_type <- c("long") #what type of data output do you want? Options are: "long
 
 #Click the play button on the right to clean and save your data
 
-library(here)
-source("https://raw.githubusercontent.com/kbhlab/leq_qualtrics_cleaning/master/scripts/clean_leq_data.qmd")
+source("https://raw.githubusercontent.com/kbhlab/leq_qualtrics_cleaning/master/scripts/source_code.R")
 
 ```
 
