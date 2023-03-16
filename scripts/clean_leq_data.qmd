@@ -239,19 +239,19 @@ leq_data_clean_wide_summary <- leq_data_clean_long_detailed %>%
 #-----------------------------------------Full Data
 
 if("wide_detailed" %in% data_type) {
-  leq_data_clean_wide %>% write_csv(here(paste0(output_var, lubridate::today(), "wide_detailed_leq.csv")))
+  leq_data_clean_wide %>% write_csv(here(paste0(output_var, lubridate::today(), "_wide_detailed_leq.csv")))
 }
 
 #-----------------------------------------Summary Data
 
 if("wide_summary" %in% data_type) {
-  leq_data_clean_wide_summary %>% write_csv(here(paste0(output_var, lubridate::today(), "wide_summary_leq.csv")))
+  leq_data_clean_wide_summary %>% write_csv(here(paste0(output_var, lubridate::today(), "_wide_summary_leq.csv")))
 }
 
 #-----------------------------------------Long Data
 
 if("long" %in% data_type) {
-  leq_data_clean_long_detailed %>% write_csv(here(paste0(output_var, lubridate::today(), "long_leq.csv")))
+  leq_data_clean_long_detailed %>% write_csv(here(paste0(output_var, lubridate::today(), "_long_leq.csv")))
 }
 
 

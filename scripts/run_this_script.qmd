@@ -15,7 +15,7 @@ Press the play button on the right-hand-side **after updating the variables** to
 input_var <- "data/2023-03-16_leq_data" #change this file path to match where your data is located and the file name WITHOUT the file extension. This is the data exported from the LEQ on Qualtrics as a CSV file.
 
 #---------------------OUTPUT DATA
-output_var <- "data/" #change this file path to match where your cleaned data should be saved. This is JUST the folder name, the file name will be created in the script.
+output_var <- "output/" #change this file path to match where your cleaned data should be saved. This is JUST the folder name, the file name will be created in the script.
 
 #---------------------DATA TYPE FOR OUTPUT
 data_type <- c("long") #what type of data output do you want? Options are: "long", which will output a dataset with one row per ID per language per situation; "wide_summary" which will output a dataset with one row per ID and only the overall language estimates (overall, cumulative, global, current for the final situation only) and no detail for each situation; "wide_detailed" which will output a dataset with one row per ID and all information for each language and each situation in its own column. You can export multiple types by using the c() function, for example: c("long", "wide_summary")
@@ -23,7 +23,7 @@ data_type <- c("long") #what type of data output do you want? Options are: "long
 #Click the play button on the right to clean and save your data
 
 library(here)
-source(here("clean_leq_data.qmd"))
+source("https://raw.githubusercontent.com/kbhlab/leq_qualtrics_cleaning/master/scripts/clean_leq_data.qmd")
 
 ```
 
