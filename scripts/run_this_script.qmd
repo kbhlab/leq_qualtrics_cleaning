@@ -10,7 +10,7 @@ COPY THIS WHOLE FILE (run_this_script.qmd) TO YOUR PROJECT, THEN CHANGE VARIABLE
 
 ## VARIABLES - UPDATE THESE
 
-Press the play button on the right-hand-side **after updating the variables and copying the entire code chunk to your project** to clean and save the LEQ data in your desired output. Your input file MUST be the full Qualtrics LEQ download as a CSV for this script to work.
+Press the play button on the right-hand-side **after updating the variables and copying the entire code chunk to your project** to clean and save the LEQ data in your desired output. Your input file MUST be the full Qualtrics LEQ download as a CSV for this script to work. You will need three packages to be installed for this script to run: tidyverse, janitor, and here.
 
 ```{r}
 #---------------------INPUT DATA
