@@ -33,9 +33,17 @@ str_swap <- Vectorize(str_swap)
 #get column names because the Qualtrics output has some extra lines that interfere with reading in the data properly (first row is colnames, second is the question text from Qualtrics, third is some weird Qualtrics import metadata thing)
 col_names <- names(read_csv(here(paste0(input_var, ".csv")), n_max = 0))
 
+#create tibble with column types in case some are read in with all NAs, causing them to incorrectly be assigned logical
+types <- tibble(col = col_names) %>%
+  mutate(type = case_when(str_detect(col, "[D|d]ate") ~ "D",
+                          str_detect(col, "seconds|baby_id|_age|_start$|hours|hrs|_end$|_count|_length|^num_|_est|_exp$") ~ "n",
+                          TRUE ~ "c")) %>%
+  pull(type) %>%
+  paste0(., collapse = "") #read_csv can take a single string of shortcode column types
+
 admin_cols <- c("response_id", "user_language", "participation_date", "researcher", "baby_id", "study_id", "study_name", "date_of_birth", "child_gender")
 
-leq_data <- read_csv(here(paste0(input_var, ".csv")), col_names = col_names, skip = 3) %>%
+leq_data <- read_csv(here(paste0(input_var, ".csv")), col_names = col_names, col_types = types, skip = 3) %>%
   clean_names() %>%
   #get rid of all the extra columns not needed because Qualtrics
   select(-start_date, -end_date, -recorded_date, -status, -ip_address, -progress, -duration_in_seconds, -finished,-starts_with("recipient"), -external_reference, -location_latitude, -location_longitude, -distribution_channel, -baby_gender, -baby_gender2, -baby_gender3, -mono_exception_text, -today_date, -sleepwake_diff, -age_sit_start, -contains("default"), -cgvr1_lang3, -cgvr2_lang3, -cgvr1_lang4, -cgvr2_lang4, -highest_age, -confirm_age_4, -situation_count, -matches("sit\\d+_type.*_text"), -matches("l\\d_global_exp")) %>%
