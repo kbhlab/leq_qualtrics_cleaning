@@ -167,7 +167,7 @@ discrepancies %>%
   filter(discrepancy == "CHECK") %>% 
   left_join(id_list) %>%
   mutate(info_to_keep = "", comment = "") %>%
-  write_csv(here(paste0(output_var, lubridate::today(), "discrepancies_to_check.csv")))
+  write_csv(here(paste0(output_var, lubridate::today(), "_discrepancies_to_check.csv")))
 
 }
 
