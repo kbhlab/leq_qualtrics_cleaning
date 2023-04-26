@@ -156,9 +156,13 @@ leq_data_wide <- leq_data %>%
 if(check_discrepancies == TRUE) {
 
 discrepancies_prep <- leq_data_wide %>%
-  mutate(across(-recorded_date, as.character)) %>%
+  mutate(across(-recorded_date, as.character),
+         date_of_response = lubridate::ymd(str_sub(recorded_date, 1, 10))) %>%
+  group_by(study_name, study_id, date_of_response) %>%
+  filter(recorded_date == max(recorded_date)) %>% #if more than one entry on same day, only keep last one
   #remove auto-calculated columns that aren't something an RA enters
-  select(-user_language, -researcher, -ends_with("hrsperweek"), -sit_count, -ends_with("age_acquired"), -mono_exception, -baby_age, 
+  ungroup() %>%
+  select(-date_of_response, -user_language, -researcher, -ends_with("hrsperweek"), -sit_count, -ends_with("age_acquired"), -mono_exception, -baby_age, 
          -baby_fullage, -num_langs, -ends_with("total_hrs"), -ends_with("cumu_exp"), -ends_with("overall_exp")) %>%
   #group by same study name and ID to find entries relating to same participation, filter to only those with 2 entries, then add a data entry #
   group_by(study_name, study_id) %>%
