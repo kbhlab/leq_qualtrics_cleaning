@@ -4,6 +4,7 @@ library(janitor)
 library(here)
 library(tidylog)
 
+#-------------------------------------------------------------------------------------------Custom functions
 #function for swapping elements in a string for later efficient renaming
 str_swap <- function(string, str1, str2) {
   if (str_detect(string, str1, negate = TRUE) | str_detect(string, str2, negate = TRUE)) {
@@ -28,6 +29,23 @@ str_swap <- function(string, str1, str2) {
 #vectorize the function so it works across multiple inputs
 str_swap <- Vectorize(str_swap)
 
+#function for converting numbers to ordinal words for ease of interpretation... 10 should be way more than enough.
+ord_words <- tibble(num = c(1:10), word = c("first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth"))
+
+num_to_ord <- function(number) {
+  
+  if(!is.numeric(number)) {
+    stop("num_to_ord function must have a numeric input")
+  }
+  number_word <- tibble(num = number) %>%
+    dplyr::left_join(ord_words, by = "num") %>%
+    pull(word)
+  
+  return(number_word)
+}
+
+num_to_ord <- Vectorize(num_to_ord)
+
 #-------------------------------------------------------------------------------------------Data
 
 #get column names because the Qualtrics output has some extra lines that interfere with reading in the data properly (first row is colnames, second is the question text from Qualtrics, third is some weird Qualtrics import metadata thing)
@@ -35,18 +53,20 @@ col_names <- names(read_csv(here(paste0(input_var, ".csv")), n_max = 0))
 
 #create tibble with column types in case some are read in with all NAs, causing them to incorrectly be assigned logical
 types <- tibble(col = col_names) %>%
-  mutate(type = case_when(str_detect(col, "[D|d]ate") ~ "D",
+  mutate(type = case_when(col == "StartDate" | col == "EndDate" | col == "RecordedDate" ~ "c",
+                          str_detect(col, "[D|d]ate") ~ "D",
                           str_detect(col, "seconds|baby_id|_age|_start$|hours|hrs|_end$|_count|_length|^num_|_est|_exp$") ~ "n",
                           TRUE ~ "c")) %>%
   pull(type) %>%
   paste0(., collapse = "") #read_csv can take a single string of shortcode column types
 
-admin_cols <- c("response_id", "user_language", "participation_date", "researcher", "baby_id", "study_id", "study_name", "date_of_birth", "child_gender")
+admin_cols <- c("response_id", "recorded_date", "user_language", "participation_date", "researcher", "baby_id", "study_id", "study_name", "date_of_birth", "child_gender")
 
 leq_data <- read_csv(here(paste0(input_var, ".csv")), col_names = col_names, col_types = types, skip = 3) %>%
   clean_names() %>%
+  filter(finished == "True") %>% #only keep ones that were completed and submitted
   #get rid of all the extra columns not needed because Qualtrics
-  select(-start_date, -end_date, -recorded_date, -status, -ip_address, -progress, -duration_in_seconds, -finished,-starts_with("recipient"), -external_reference, -location_latitude, -location_longitude, -distribution_channel, -baby_gender, -baby_gender2, -baby_gender3, -mono_exception_text, -today_date, -sleepwake_diff, -age_sit_start, -contains("default"), -cgvr1_lang3, -cgvr2_lang3, -cgvr1_lang4, -cgvr2_lang4, -highest_age, -confirm_age_4, -situation_count, -matches("sit\\d+_type.*_text"), -matches("l\\d_global_exp")) %>%
+  select(-start_date, -end_date, -status, -ip_address, -progress, -duration_in_seconds, -finished,-starts_with("recipient"), -external_reference, -location_latitude, -location_longitude, -distribution_channel, -baby_gender, -baby_gender2, -baby_gender3, -mono_exception_text, -today_date, -sleepwake_diff, -age_sit_start, -contains("default"), -cgvr1_lang3, -cgvr2_lang3, -cgvr1_lang4, -cgvr2_lang4, -highest_age, -confirm_age_4, -situation_count, -matches("sit\\d+_type.*_text"), -matches("l\\d_global_exp")) %>%
   #rename columns so they are more understandable and consistent (like using l1, l2 instead of sometimes lang1, lang2 and using weekday text instead of numbers):
   rename_with(~str_replace_all(., 
                                c("_hrs_" = "_hrs_l", 
@@ -72,7 +92,8 @@ leq_data <- read_csv(here(paste0(input_var, ".csv")), col_names = col_names, col
          daycare_l3 = daycare_l3_text,
          daycare_l4 = daycare_l4_text,
          researcher_notes = final_notes,
-         cgvr2_yn = second_cgiver_yn)
+         cgvr2_yn = second_cgiver_yn) %>%
+  mutate(recorded_date = lubridate::ymd_hms(recorded_date))
 names(leq_data)
 
 
@@ -135,26 +156,28 @@ leq_data_wide <- leq_data %>%
 if(check_discrepancies == TRUE) {
 
 discrepancies_prep <- leq_data_wide %>%
-  mutate(across(everything(), as.character)) %>%
+  mutate(across(-recorded_date, as.character)) %>%
   #remove auto-calculated columns that aren't something an RA enters
   select(-user_language, -researcher, -ends_with("hrsperweek"), -sit_count, -ends_with("age_acquired"), -mono_exception, -baby_age, 
          -baby_fullage, -num_langs, -ends_with("total_hrs"), -ends_with("cumu_exp"), -ends_with("overall_exp")) %>%
   #group by same study name and ID to find entries relating to same participation, filter to only those with 2 entries, then add a data entry #
   group_by(study_name, study_id) %>%
   filter(n() > 1) %>%
-  arrange(response_id) %>%
+  arrange(study_name, study_id, recorded_date) %>%
+  filter(row_number() >= max(row_number())-1) %>% # this line only takes the two most recent entries to compare
   mutate(entry_num = row_number(),
-         entry_num = case_when(entry_num == 1 ~ "first_entry",
-                               entry_num == 2 ~ "second_entry")) 
+         entry_num = paste0(num_to_ord(entry_num), "_entry")) %>%
+  ungroup()
 
 id_list <- discrepancies_prep %>%
-  distinct(response_id, study_id, entry_num) %>%
-  mutate(entry_num = ifelse(str_detect(entry_num, "first"), "id_1", "id_2")) %>%
-  pivot_wider(names_from = "entry_num", values_from = "response_id")
+  distinct(response_id, recorded_date, study_id, entry_num) %>%
+  mutate(entry_num = ifelse(str_detect(entry_num, "first"), "first_entry", "second_entry")) %>%
+  pivot_wider(names_from = "entry_num", values_from = c("response_id", "recorded_date")) %>%
+  select(study_id, response_id_first_entry, recorded_date_first_entry, response_id_second_entry, recorded_date_second_entry)
   
   
 discrepancies <- discrepancies_prep %>%
-  select(-response_id) %>%
+  select(-response_id, -recorded_date) %>%
   #pivot to get everything in one column for easier comparing
   pivot_longer(-c(study_id, study_name, entry_num), names_to = "variable", values_to = "response") %>% 
   pivot_wider(names_from = "entry_num", values_from = c("response")) %>% 
@@ -166,7 +189,7 @@ discrepancies <- discrepancies_prep %>%
 discrepancies %>% 
   filter(discrepancy == "CHECK") %>% 
   left_join(id_list) %>%
-  mutate(info_to_keep = "", comment = "") %>%
+  mutate(info_to_keep = "", comment = "") %>% 
   write_csv(here(paste0(output_var, lubridate::today(), "_discrepancies_to_check.csv")))
 
 }

@@ -14,7 +14,7 @@ Press the play button on the right-hand-side **after updating the variables and 
 
 ```{r}
 #---------------------INPUT DATA
-input_var <- "data/2023-03-16_leq_data" #change this file path to match where your data is located and the file name WITHOUT the file extension. This is the data exported from the LEQ on Qualtrics as a CSV file.
+input_var <- "data/2023-04-26_leq_data_REALDATA" #change this file path to match where your data is located and the file name WITHOUT the file extension. This is the data exported from the LEQ on Qualtrics as a CSV file.
 
 #---------------------OUTPUT DATA
 output_var <- "output/" #change this file path to match where your cleaned data should be saved. This is JUST the folder name, the file name will be created in the script.
