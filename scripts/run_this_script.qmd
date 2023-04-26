@@ -22,6 +22,9 @@ output_var <- "output/" #change this file path to match where your cleaned data 
 #---------------------DATA TYPE FOR OUTPUT
 data_type <- c("long") #what type of data output do you want? Options are: "long", which will output a dataset with one row per ID per language per situation; "wide_summary" which will output a dataset with one row per ID and only the overall language estimates (overall, cumulative, global, current for the final situation only) and no detail for each situation; "wide_detailed" which will output a dataset with one row per ID and all information for each language and each situation in its own column. You can export multiple types by using the c() function, for example: c("long", "wide_summary")
 
+#---------------------CHECK DOUBLE ENTRY DISCREPANCIES
+check_discrepancies <- FALSE #do you want to check double entry of paper LEQ forms into Qualtrics for discrepancies? If so, change this variable to TRUE and the script will output a file called "discrepancies_to_check.csv" for specific data points to verify.
+
 #Click the play button on the right to clean and save your data
 
 source("https://raw.githubusercontent.com/kbhlab/leq_qualtrics_cleaning/master/scripts/source_code.R")

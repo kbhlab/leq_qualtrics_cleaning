@@ -117,7 +117,7 @@ clean_situations <- leq_data %>%
 leq_data_wide <- leq_data %>%
   select(-matches("sit\\d+_type$"), -matches("sit\\d+_type_specify")) %>%
   left_join(clean_situations) %>%
-  select(admin_cols, starts_with("cgvr1"), starts_with("cgvr2"), contains("cgvrs"), contains("daycare"), contains("trips"), starts_with("child_l"), wake_time, sleep_time, hours_nap, hrs_awake,
+  select(all_of(admin_cols), starts_with("cgvr1"), starts_with("cgvr2"), contains("cgvrs"), contains("daycare"), contains("trips"), starts_with("child_l"), wake_time, sleep_time, hours_nap, hrs_awake,
          sit1, matches("sit1(?!0)", perl = TRUE), 
          sit2, contains("sit2"), 
          sit3, contains("sit3"), 
@@ -129,6 +129,47 @@ leq_data_wide <- leq_data %>%
          sit9, contains("sit9"),
          sit10, contains("sit10"),
          sit_count, starts_with("glob"), researcher_notes, mono_exception, contains("acquired"), baby_age, baby_fullage, child_langs, num_langs, contains("global"), contains("total"), contains("cumu"), contains("curr"), contains("overall"))
+
+#----------------------------------------Check double entries for discrepancies
+#first make everything character so can pivot longer, then identify multiple entries for same participant, and check what's different
+if (check_discrepancies = TRUE) {
+
+discrepancies_prep <- leq_data_wide %>%
+  mutate(across(everything(), as.character)) %>%
+  #remove auto-calculated columns that aren't something an RA enters
+  select(-user_language, -researcher, -ends_with("hrsperweek"), -sit_count, -ends_with("age_acquired"), -mono_exception, -baby_age, 
+         -baby_fullage, -num_langs, -ends_with("total_hrs"), -ends_with("cumu_exp"), -ends_with("overall_exp")) %>%
+  #group by same study name and ID to find entries relating to same participation, filter to only those with 2 entries, then add a data entry #
+  group_by(study_name, study_id) %>%
+  filter(n() > 1) %>%
+  arrange(response_id) %>%
+  mutate(entry_num = row_number(),
+         entry_num = case_when(entry_num == 1 ~ "first_entry",
+                               entry_num == 2 ~ "second_entry")) 
+
+id_list <- discrepancies_prep %>%
+  distinct(response_id, study_id, entry_num) %>%
+  mutate(entry_num = ifelse(str_detect(entry_num, "first"), "id_1", "id_2")) %>%
+  pivot_wider(names_from = "entry_num", values_from = "response_id")
+  
+  
+discrepancies <- discrepancies_prep %>%
+  select(-response_id) %>%
+  #pivot to get everything in one column for easier comparing
+  pivot_longer(-c(study_id, study_name, entry_num), names_to = "variable", values_to = "response") %>% 
+  pivot_wider(names_from = "entry_num", values_from = c("response")) %>% 
+  mutate(discrepancy = case_when(first_entry != second_entry ~ "CHECK",
+                            is.na(first_entry) & !is.na(second_entry) ~ "CHECK",
+                            !is.na(first_entry) & is.na(second_entry) ~ "CHECK",
+                            TRUE ~ ""))
+  
+discrepancies %>% 
+  filter(discrepancy == "CHECK") %>% 
+  left_join(id_list) %>%
+  mutate(info_to_keep = "", comment = "") %>%
+  write_csv(here(paste0(output_var, lubridate::today(), "discrepancies_to_check.csv")))
+
+}
 
 #----------------------------------------Make succinct data without all the daily hours but totals only
 
