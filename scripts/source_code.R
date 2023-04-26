@@ -132,7 +132,7 @@ leq_data_wide <- leq_data %>%
 
 #----------------------------------------Check double entries for discrepancies
 #first make everything character so can pivot longer, then identify multiple entries for same participant, and check what's different
-if (check_discrepancies == TRUE) {
+if(check_discrepancies == TRUE) {
 
 discrepancies_prep <- leq_data_wide %>%
   mutate(across(everything(), as.character)) %>%
