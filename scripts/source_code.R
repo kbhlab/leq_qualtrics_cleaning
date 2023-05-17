@@ -259,7 +259,7 @@ leq_data_clean_long_detailed <- leq_data_wide %>%
 
 leq_data_clean_wide_summary <- leq_data_clean_long_detailed %>%
   group_by(response_id) %>%
-  filter(situation == max(situation)) %>%
+  filter(situation == max(as.numeric(situation))) %>%
   select(admin_cols, child_langs, num_sits, num_langs, researcher_notes, mono_exception, baby_age, baby_fullage, glob_est, overall_exp, curr_exp, cumu_exp, total_hrs, language, lang_name) %>%
   distinct() %>%
   mutate(language = case_when(str_detect(lang_name, "fran.ais|French") ~ "fre",
