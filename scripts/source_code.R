@@ -213,6 +213,8 @@ leq_data_clean_long_detailed <- leq_data_wide %>%
                          str2 = str_extract(.x, "sit\\d+_")), 
               matches("l\\d_sit\\d+")) %>%
   rename_with(~ str_replace(.x, "(?<=l\\d)_", ".")) %>% 
+  rename_with(~ paste0(.x, "_description"),
+              matches("^sit\\d{1,2}$")) %>%
   pivot_longer(starts_with("sit"), 
                names_to = c('situation', '.value'),
                names_pattern = '(.*)_(.+)') %>% 
